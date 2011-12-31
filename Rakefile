@@ -17,11 +17,11 @@ Jeweler::Tasks.new do |gem|
   gem.name = "email_address_validation"
   gem.homepage = "http://github.com/Tamakloe/email_address_validation"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = "Use to validate e-mail addresses"
+  gem.description = "This gem will use ActiveRecord’s existing validates_format_of method to check whether the parameter corresponds to a valid email regex"
   gem.email = "x10209778@student.ncirl.ie"
   gem.authors = ["Gerard"]
-  # dependencies defined in Gemfile
+  gem.files = Dir.glob('lib/**/*.rb')
 end
 Jeweler::RubygemsDotOrgTasks.new
 
