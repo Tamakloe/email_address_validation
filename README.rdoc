@@ -1,8 +1,18 @@
-= email_address_validation
+= validate_email_address
 
-Description goes here.
 
-== Contributing to email_address_validation
+This gem uses :
+
+1. ActiveRecord’s existing validates_format_of method to check whether the parameter corresponds to a valid email regex.
+2. ActiveRecord’s existing validates_presence_of to check whether a user has entered a email address
+and 
+3. ActiveRecord’s existing validates_uniqueness_of to check if the email address has already been entered.
+
+The email regex used is: /^(|(([A-Za-z0-9]+_+)|([A-Za-z0-9]+\-+)|([A-Za-z0-9]+\.+)|([A-Za-z0-9]+\++))*[A-Za-z0-9]+@((\w+\-+)|(\w+\.))*\w{1,63}\.[a-zA-Z]{2,6})$/i
+
+
+
+== Contributing to validate_email_address
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
@@ -14,6 +24,6 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2011 Gerard. See LICENSE.txt for
+Copyright (c) 2011 Gerard Tamakloe. See LICENSE.txt for
 further details.
 
