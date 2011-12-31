@@ -1,4 +1,4 @@
-= validate_email_address
+== email_address-validation
 
 
 This gem uses :
@@ -11,8 +11,17 @@ and
 The email regex used is: /^(|(([A-Za-z0-9]+_+)|([A-Za-z0-9]+\-+)|([A-Za-z0-9]+\.+)|([A-Za-z0-9]+\++))*[A-Za-z0-9]+@((\w+\-+)|(\w+\.))*\w{1,63}\.[a-zA-Z]{2,6})$/i
 
 
+Install: gem install email_address_validation
 
-== Contributing to validate_email_address
+Configure: add the following to User.rb (or where you want to validate emails)
+      		
+class User < ActiveRecord::Base
+	validates_email_address_of :email
+
+end
+
+
+== Contributing to email_address_validation
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
