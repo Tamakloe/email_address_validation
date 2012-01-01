@@ -3,6 +3,11 @@
 
 This gem uses :
 
+Gem will check:	1. Valid format of email
+		2. Presence of email
+		3. Uniqueness of email
+
+
 1. ActiveRecord’s existing validates_format_of method to check whether the parameter corresponds to a valid email regex.
 2. ActiveRecord’s existing validates_presence_of to check whether a user has entered a email address
 and 
@@ -10,6 +15,8 @@ and
 
 The email regex used is: /^(|(([A-Za-z0-9]+_+)|([A-Za-z0-9]+\-+)|([A-Za-z0-9]+\.+)|([A-Za-z0-9]+\++))*[A-Za-z0-9]+@((\w+\-+)|(\w+\.))*\w{1,63}\.[a-zA-Z]{2,6})$/i
 
+
+== Usage:
 
 Install: gem install email_address_validation
 
