@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/Tamakloe/email_address_validation"
   gem.license = "MIT"
   gem.summary = "Use to validate e-mail addresses"
-  gem.description = "This gem will use ActiveRecord’s existing validates_format_of method to check whether the parameter corresponds to a valid email regex"
+  gem.description = "This gem will use ActiveRecord’s existing validates_format#presence#uniqueness_of method to check whether the email parameter has a valid format, is present and is unique"
   gem.email = "x10209778@student.ncirl.ie"
   gem.authors = ["Gerard Tamakloe"]
   gem.files = Dir.glob('lib/**/*.rb')
