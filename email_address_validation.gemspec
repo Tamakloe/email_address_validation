@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = "email_address_validation"
-  s.version = "0.3.1"
+  s.version = "0.3.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Gerard"]
-  s.date = "2011-12-31"
-  s.description = "This gem will use ActiveRecord\u{2019}s existing validates_format_of method to check whether the parameter corresponds to a valid email regex"
+  s.authors = ["Gerard Tamakloe"]
+  s.date = "2012-01-02"
+  s.description = "This gem will use ActiveRecord\u{2019}s existing validates_format#presence#uniqueness_of method to check whether the email parameter has a valid format, is present and is unique"
   s.email = "x10209778@student.ncirl.ie"
   s.extra_rdoc_files = [
     "LICENSE.txt",
