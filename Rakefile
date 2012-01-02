@@ -20,7 +20,7 @@ Jeweler::Tasks.new do |gem|
   gem.summary = "Use to validate e-mail addresses"
   gem.description = "This gem will use ActiveRecord’s existing validates_format_of method to check whether the parameter corresponds to a valid email regex"
   gem.email = "x10209778@student.ncirl.ie"
-  gem.authors = ["Gerard"]
+  gem.authors = ["Gerard Tamakloe"]
   gem.files = Dir.glob('lib/**/*.rb')
 end
 Jeweler::RubygemsDotOrgTasks.new

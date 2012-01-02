@@ -18,7 +18,7 @@ The email regex used is: /^(|(([A-Za-z0-9]+_+)|([A-Za-z0-9]+\-+)|([A-Za-z0-9]+\.
 
 == Usage:
 
-Install: gem install email_address_validation
+To Install: gem install email_address_validation
 
 Configure: add the following to User.rb (or where you want to validate emails)
       		
